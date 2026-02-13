@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net35;net462;net48;net6.0;net8.0</TargetFrameworks>
+		<LangVersion>latest</LangVersion>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+		<ImplicitUsings Condition="'$(TargetFramework)' != 'net35' AND '$(TargetFramework)' != 'net462' AND '$(TargetFramework)' != 'net48'">enable</ImplicitUsings>
+		<Nullable Condition="'$(TargetFramework)' != 'net35'">enable</Nullable>
+
+		<PackageId>ProfMinecraftDev.CSharpEx</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Prof Minecraft</Authors>
+		<Company>Prof Minecraft Dev</Company>
+		<Description>A powerful multi-platform extension toolkit for .NET. Includes advanced process management (Job Objects, RAM limits), fluent type conversions, and missing extensions for everyday development. Support from .NET 3.5 to .NET 8.0.</Description>
+		<PackageTags>extensions;process;jobobject;toolkit;fluent;conversion;dotnet8;minecraft;server-management</PackageTags>
+		<PackageProjectUrl>https://github.com/ProfMinecraftDev/CSharpEx</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/ProfMinecraftDev/CSharpEx</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReleaseNotes>Initial release with Process, String, Number and Object extensions.</PackageReleaseNotes>
+		<Copyright>Copyright © $([System.DateTime]::Now.Year) Prof Minecraft</Copyright>
+
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Windows.CsWin32"
+						  Version="0.3.183">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net35'">
+		<Reference Include="System" />
+		<Reference Include="System.Core" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework' AND '$(TargetFramework)' != 'net35'">
+		<PackageReference Include="System.Memory"
+						  Version="4.6.0" />
+		<PackageReference Include="System.Runtime.CompilerServices.Unsafe"
+						  Version="6.1.0" />
+		<PackageReference Include="System.Runtime.InteropServices.RuntimeInformation"
+						  Version="4.3.0" />
+	</ItemGroup>
+
+</Project>
