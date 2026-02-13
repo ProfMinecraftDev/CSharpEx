@@ -16,11 +16,11 @@
 		<PackageTags>extensions;process;jobobject;toolkit;fluent;conversion;dotnet8;minecraft;server-management</PackageTags>
 		<PackageProjectUrl>https://github.com/ProfMinecraftDev/CSharpEx</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/ProfMinecraftDev/CSharpEx</RepositoryUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryType>git</RepositoryType>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReleaseNotes>Initial release with Process, String, Number and Object extensions.</PackageReleaseNotes>
 		<Copyright>Copyright © $([System.DateTime]::Now.Year) Prof Minecraft</Copyright>
-
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	</PropertyGroup>
