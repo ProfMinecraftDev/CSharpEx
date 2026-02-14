@@ -9,7 +9,7 @@
 		<Nullable Condition="'$(TargetFramework)' != 'net35'">enable</Nullable>
 
 		<PackageId>ProfMinecraftDev.CSharpEx</PackageId>
-		<Version>1.0.0</Version>
+		<Version>1.0.1</Version>
 		<Authors>Prof Minecraft</Authors>
 		<Company>Prof Minecraft Dev</Company>
 		<Description>A powerful multi-platform extension toolkit for .NET. Includes advanced process management (Job Objects, RAM limits), fluent type conversions, and missing extensions for everyday development. Support from .NET 3.5 to .NET 8.0.</Description>
