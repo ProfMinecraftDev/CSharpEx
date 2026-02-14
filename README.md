@@ -1,4 +1,4 @@
-# 🚀 CSharpEx
+# 🚀 CSharpEx [![NuGet Version](https://img.shields.io/nuget/v/ProfMinecraftDev.CSharpEx.svg)](https://www.nuget.org/packages/ProfMinecraftDev.CSharpEx/)
 
 **El Toolkit de extensiones definitivo para .NET.** Una librería diseñada para potenciar el desarrollo multiplataforma, simplificando tareas complejas de sistema y ofreciendo azúcar sintáctico para el día a día.
 
