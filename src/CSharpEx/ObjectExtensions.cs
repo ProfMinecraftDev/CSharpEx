@@ -1,4 +1,5 @@
-﻿namespace CSharpEx
+﻿#nullable enable
+namespace CSharpEx
 {
 	public static class ObjectExtensions
 	{

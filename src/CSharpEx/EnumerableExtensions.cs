@@ -1,4 +1,9 @@
-﻿namespace CSharpEx
+﻿#nullable enable
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace CSharpEx
 {
 	public static class EnumerableExtensions
 	{
